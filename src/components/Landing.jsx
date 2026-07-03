@@ -49,10 +49,17 @@ const TICKET_TYPES = [
   },
 ]
 
+import mascot from '../assets/mascot.svg'
+
 export default function Landing({ onStart, hasApiKey, onSettings }) {
   return (
     <div style={{ maxWidth: 900, margin: '0 auto', padding: '3rem 0 4rem' }}>
       <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+        <img
+          src={mascot}
+          alt="Scopecreeper mascot"
+          style={{ width: 120, height: 'auto', marginBottom: '1rem', filter: 'drop-shadow(0 8px 24px rgba(59,130,246,0.35))' }}
+        />
         <h1 style={{
           fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 800,
           letterSpacing: '-1px', lineHeight: 1.15, marginBottom: '0.75rem'
